@@ -1,0 +1,10 @@
+services:
+  node1:
+    build: .
+    container_name: node1
+    hostname: node1
+    networks:
+      - gossip-net
+networks:
+  gossip-net:
+    driver: bridge
